@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <script type="module" src="desafio3fim.js"></script>  
+    <title>DESAFIO3fim</title>
+</head>
+<style>
+*{
+    margin:0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom,  #2196F3, #3D5AFE, #0D47A1);
+}
+.primeiro{
+    font-family: verdana;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+.segundo{
+    font-size: 13px;
+    font-family: verdana;
+    text-align: center;
+    color: white;
+}
+.icons-list{
+    top: 15%;
+    right: 47%;
+    padding: 25px; 
+    font-size: 5rem;
+    border-radius:100%;
+    position: absolute;
+    background-color: white;
+    color: #2196F3;
+}
+div{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top:70px;
+    border: 1px solid black;
+    font-family: verdana;
+}
+section{
+    padding: 40px;
+}
+form{
+    width: 100%;
+    height: auto;
+    padding: 1px;
+}
+fieldset{
+    padding: 4px;
+    border: none;
+}
+label{
+    width: 100%;
+    height: auto;
+    padding: 1px;
+    margin: 0 auto;
+    display: block;
+}
+.txt{
+    width: 100%;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+#filling{
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    margin-top: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    border-bottom: 3px solid black;
+    background-color: #2196F3;
+    color: white;
+}
+</style>
+<body>
+    <header>
+        <h1 class="primeiro">ME ACHA!</h1>
+        <h2 class="segundo">ENCONTRE UM ENDEREÇO PELO NÚMERO DO CEP</h2>
+        <span class="material-icons icons-list">travel_explore</span>
+    </header>
+    <main>
+        <div>
+            <section>
+                <form>
+                    <fieldset>
+                        <label for="cep">CEP*</label>
+                        <input type="text" class="txt" id="cep" name="cep" required placeholder= "" value="">
+                        <label for="rua">RUA</label>
+                        <input type="text" class="txt" id="logradouro" name="rua" value="">
+                        <label for="bairro">BAIRRO</label>
+                        <input type="text" class="txt" id="bairro" name="bairro" value="">
+                        <label for="cidade">CIDADE</label>
+                        <input type="text" class="txt" id="localidade" name="cidade" value="">
+                        <label for="estado">ESTADO</label>
+                        <input type="text" class="txt" id="uf" name="estado" value="">
+                        <input id="filling" type="button" name="buscarDados" value="BUSCAR">
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
